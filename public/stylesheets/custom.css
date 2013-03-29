@@ -1,0 +1,37 @@
+#content{
+
+    margin-top:50px;
+    border-top:1px solid #dcdcdc;
+}
+#content ul{
+
+    margin:0;
+    padding:8px;
+    border:1px solid black;
+
+}
+#content label{
+    top:19px;
+
+}
+#content li {
+    padding:5px;
+    list-style: none;
+    margin-left:200px;
+
+
+}
+#content li:first-child{
+
+    margin-top:-20px;
+}
+#content li span{
+    color:red;
+    margin-right:20px;
+}
+#progress{
+
+    height:10px;
+
+}
+

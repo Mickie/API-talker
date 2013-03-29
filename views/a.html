@@ -1,0 +1,164 @@
+
+
+<html>
+<head>
+    <title>
+     reports
+    </title>
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="http://code.jquery.com/jquery-migrate-1.1.1.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
+
+    <script>
+
+
+        //build html elements and show the results
+        function ShowInHtml(TheData){
+            for(j=0;j<24;j++) {
+
+                //create the <ul>tag and <label> ,append to #content
+                var element=document.getElementById("content");
+                var NewUl=document.createElement("ul");
+                var NewLabel=document.createElement("label");
+                var NewLabelText= document.createTextNode("the Tweets of hour "+j);
+                NewLabel.appendChild(NewLabelText);
+                NewUl.appendChild(NewLabel);
+                element.appendChild(NewUl);
+
+                //literate array and get the tweets at j hour
+                for (i=0;i<TheData.length;i++){
+
+                    if(JSON.parse(TheData[i]).hour==j) {
+
+                        // create <li>
+                        var NewLi=document.createElement("li");
+                        var NewSpan=document.createElement("span") ;
+
+
+                        var NewLiScore=document.createTextNode(JSON.parse(TheData[i]).score);
+                        var NewLiTweet=document.createTextNode(" "+JSON.parse(TheData[i]).tweet);
+
+                        NewSpan.appendChild(NewLiScore);
+                        NewLi.appendChild(NewSpan);
+                        NewLi.appendChild(NewLiTweet);
+
+                        NewLabel.appendChild(NewLi);
+
+                    }
+                }
+            }
+        }
+
+                //datepicker
+                $(function() {
+                        $( "#datepicker" ).datepicker({dateFormat: 'yy-mm-dd'});
+
+                });
+
+
+                //get the result upon clicking the button
+
+                function update(){
+                    var element=$( "#content" );
+                    element.empty();
+
+                     //get the value of the input
+                    var TeamSelected=document.getElementById("selectTeam");
+                    var TeamSelectedValue=TeamSelected.options[TeamSelected.selectedIndex].value;
+                    var DateSelectedValue=  $( "#datepicker" ).val() ;
+
+
+                    if (DateSelectedValue==""){
+                        alert("select the date before processing your request!")
+                    }
+                    //run only after select a date
+                    else {
+                    $("button").attr("disabled","disabled");
+                    $( "#progress" ).progressbar({disabled:true,value: false});
+                    $( "#progress" ).progressbar("option","disabled",false );
+                    $.ajax({
+                        url: "/MyUrl",
+                        data: {
+
+                            team: TeamSelectedValue,
+                            date: DateSelectedValue
+                        },
+                        error: function(){
+                            alert("an error happened");
+                            $("button").removeAttr("disabled");
+                            $( "#progress" ).progressbar( "option","disabled",true );
+
+                        },
+                        success: function( data ) {
+                            $( "#progress" ).progressbar( "option","disabled",true );
+                            $( "#progress" ).progressbar( "destroy" );
+                              var TheData=JSON.parse(data);
+
+                              ShowInHtml(TheData);
+
+                              alert("complete") ;
+
+                              $("button").removeAttr("disabled");
+
+                        }
+
+
+                    });
+
+                  }
+
+               }
+
+
+
+
+
+
+    </script>
+
+</head>
+    <body>
+      <label>Team:</label>
+            <select id="selectTeam">
+                <option value="gonzaga-bulldogs">gonzaga-bulldogs--2</option>
+                <option value="indiana-hoosiers">indiana-hoosiers--2</option>
+                <option value="florida-gators">florida-gators--2</option>
+                <option value="michigan-wolverines">michigan-wolverines--2</option>
+                <option value="duke-blue-devils">duke-blue-devils--2</option>
+                <option value="kansas-jayhawks">kansas-jayhawks--2</option>
+                <option value="arizona-wildcats">arizona-wildcats--2</option>
+                <option value="miami-hurricanes">miami-hurricanes--2</option>
+                <option value="syracuse-orange">syracuse-orange--2</option>
+                <option value="ohio-state-buckeyes">ohio-state-buckeyes--2</option>
+                <option value="louisville-cardinals">louisville-cardinals--2</option>
+                <option value="michigan-state-spartans">michigan-state-spartans--2</option>
+                <option value="kansas-state-wildcats">kansas-state-wildcats--2</option>
+                <option value="butler-bulldogs">butler-bulldogs--2</option>
+                <option value="new-mexico-lobos">new-mexico-lobos--2</option>
+                <option value="creighton-bluejays">creighton-bluejays</option>
+                <option value="creighton-blue-jays">creighton-blue-jays</option>
+                <option value="cincinnati-bearcats">cincinnati-bearcats--2</option>
+                <option value="minnesota-golden-gophers">minnesota-golden-gophers--2</option>
+                <option value="oregon-ducks">oregon-ducks--2</option>
+                <option value="georgetown-hoyas">georgetown-hoyas--2</option>
+                <option value="missouri-tigers">missouri-tigers--2</option>
+                <option value="oklahoma-state-cowboys">oklahoma-state-cowboys--2</option>
+                <option value="pittsburgh-panthers">pittsburgh-panthers--2</option>
+                <option value="marquette-golden-eagles">marquette-golden-eagles</option>
+                <option value="notre-dame-fighting-irish">notre-dame-fighting-irish--2</option>
+
+
+            </select>
+      <br>
+      <br>
+      <br>
+
+      <label>Date:</label>
+      <input type="text" id="datepicker" />
+      <button onclick="update()" >update</button>
+
+    <div id="content"></div>
+    <div id="progress"></div>
+    </body>
+
+</html>

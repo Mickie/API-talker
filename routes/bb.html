@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+<p>test</p>
+<button onclick="doit()">click</button>
+<script>
+
+    var theTweetToReturn=[{"score":6,"hour":1},{"score":3,"hour":1},{"score":4,"hour":2},{"score":4,"hour":2},{"score":9,"hour":1}];
+
+    function compare(a,b) {
+        if (a.score < b.score)
+            return 1;
+        if (a.score > b.score)
+            return -1;
+        return 0;
+    }
+
+    var doit=function(){
+
+        var theTweetByHours=[];
+        var theSortTweetsByHours=[];
+        for(j=0;j<4;j++) {
+            alert(j);
+
+        var theTweetAtHour=[];
+        var theCount=0;
+        for(i=0;i<theTweetToReturn.length;i++){
+            var theTweet={};
+
+
+
+            if(theTweetToReturn[i].hour==j)
+            {
+
+                theTweet.hour=theTweetToReturn[i].hour;
+                theTweet.score=theTweetToReturn[i].score;
+                theTweetAtHour.push(theTweet);
+                theCount=theCount+1;
+            }
+
+        }
+        if(theCount>0){
+            theTweetByHours[j]=theTweetAtHour;
+            for(k=0;k<theTweetAtHour.length;k++)
+            {
+
+                alert("the Hour at "+j+" "+theTweetByHours[j][k].score+" "+theTweetByHours[j][k].hour) ;
+            }
+
+            alert("the length of the list of hour"+j+" "+theTweetByHours[j].length) ;
+
+            theSortTweetsByHours[j]=theTweetByHours[j].sort(compare) ;
+            alert("the length of the  sort list of hour"+j+" "+theSortTweetsByHours[j].length) ;
+            for(m=0;m<theSortTweetsByHours[j].length;m++)
+            {
+
+                alert("the sort list of Hour at "+j+" "+theSortTweetsByHours[j][m].score+" "+theSortTweetsByHours[j][m].hour) ;
+            }
+
+
+
+        }
+
+        else
+        {   theTweetByHours[j]="";
+            alert("nothing at hour"+j);
+
+        }
+
+        }
+    }
+
+</script>
+
+
+
+
+
+</body>
+</html>
