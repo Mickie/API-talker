@@ -8,6 +8,7 @@ var express = require('express')
 
   , http = require('http')
   , thereporter = require('./routes/getpostswithhighestscore')
+    ,AnReporter = require('./routes/getchanneltweets')
   , path = require('path');
 
 var app = express();
@@ -31,6 +32,8 @@ app.configure('development', function(){
 
 app.get('/', routes.index);
 app.get("/MyUrl",thereporter.fetchResults)
+app.get("/MyUrl1",AnReporter.test)
+
 
 
 http.createServer(app).listen(app.get('port'), function(){

@@ -5,7 +5,44 @@
 </head>
 <body>
 <p>test</p>
+
+
+    <ul>
+        <label>hour1
+            <label>minute1
+            <li>blah</li>
+            <li>blah</li>
+            <li>blah</li>
+            </label>
+
+            <label>minute2
+                <li>blah</li>
+                <li>blah</li>
+                <li>blah</li>
+            </label>
+
+            <label>minute3
+                <li>blah</li>
+                <li>blah</li>
+                <li>blah</li>
+            </label>
+        </label>
+    </ul>
+
+
+
+<ul>
+    <label>hour1
+        <label>minute1
+            <li>blah</li>
+            <li>blah</li>
+            <li>blah</li>
+        </label>
+    </label>
+</ul>
+
 <button onclick="doit()">click</button>
+<button onclick="it()">clickme</button>
 <script>
 
     var theTweetToReturn=[{"score":6,"hour":1},{"score":3,"hour":1},{"score":4,"hour":2},{"score":4,"hour":2},{"score":9,"hour":1}];
@@ -71,6 +108,16 @@
         }
 
         }
+    }
+
+    function it(){
+           for(i=0;i<=59;i=i+5){
+
+               alert(i);
+               alert(i+4);
+           }
+
+
     }
 
 </script>
