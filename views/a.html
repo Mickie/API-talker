@@ -171,6 +171,45 @@
 
                       }
 
+                        EmptyContent();
+                         //get the value of the input
+                        var TeamSelected=document.getElementById("selectTeam");
+                        var TeamSelectedValue=TeamSelected.options[TeamSelected.selectedIndex].value;
+                        var DateSelectedValue=  $( "#datepicker" ).val() ;
+
+                        if (DateSelectedValue==""){
+                            alert("select the date before processing your request!")
+                        }
+                        //run only after select a date
+                        else {
+                        DisableButton();
+                        loadProgressBar();
+                        $.ajax({
+                            url: "/MyUrl",
+                            data: {
+
+                                team: TeamSelectedValue,
+                                date: DateSelectedValue
+                            },error: function(){
+                                alert("an error happened");
+                                EnableButton();
+                                $( "#progress" ).progressbar( "option","disabled",true );
+
+
+                            },
+                            success: function( data ) {
+
+                                  destroyProgressBar();
+                                  var TheData=JSON.parse(data);
+                                  ShowInHtml(TheData);
+                                  alert("complete") ;
+                                  EnableButton();
+
+                            }
+                        });
+
+                      }
+
                 }
 
              // get result based on the Select Channel and Select Date
