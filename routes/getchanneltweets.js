@@ -20,9 +20,68 @@ exports.test = function (req,res){
     var TheTeamOfMarchMadness = "('louisville-cardinals--2', 'oregon-ducks--2','michigan-state-spartans--2', 'duke-blue-devils--2', 'wichita-state-shockers'," +
         "'la-salle-explorers','arizona-wildcats--2','ohio-state-buckeyes--2','kansas-jayhawks--2', 'michigan-wolverines--2', 'florida-gators--2'," +
         " 'florida-gulf-coast-eagles','indiana-hoosiers--2','syracuse-orange--2','marquette-golden-eagles', 'miami-hurricanes--2','fanzo-founders')" ;
-    if (TheTeam == "MarchMadness"){
-        var teams=TheTeamOfMarchMadness;
+
+    var TheTeamOfLA="('los-angeles-kings',  'los-angeles-lakers', 'los-angeles-sparks','los-angeles-galaxy','los-angeles-dodgers', 'los-angeles-clippers'," +
+   " 'los-angeles-angels', 'anaheim-ducks', 'loyola-marymount-lions',  'ucla-bruins', 'ucla-bruins--2', 'usc-trojans', 'usc-trojans--2')";
+
+    var TheTeamOfBoston="( 'boston-bruins', 'boston-celtics', 'boston-college-eagles', 'boston-college-eagles--2','boston-red-sox','boston-university-terriers'," +
+        "  'new-england-patriots','new-england-revolution','northeastern-huskies')" ;
+
+    var TheTeamOfBayArea= "( 'san-francisco-49ers','san-francisco-dons','san-francisco-giants', 'san-jose-earthquakes', 'san-jose-sharks','san-jose-state-spartans'," +
+        "  'san-jose-state-spartans--2', 'santa-clara-broncos', 'stanford-cardinal', 'stanford-cardinal--2', 'california-golden-bears','california-golden-bears--2'," +
+        " 'golden-state-warriors','oakland-raiders')";
+
+    var TheTeamOfNewYork="(  'albany-great-danes', 'albany-great-danes--2', 'army-black-knights', 'army-black-knights--2', 'binghamton-bearcats', 'brooklyn-nets', " +
+        " 'columbia-lions','columbia-lions--2', 'fordham-rams', 'fordham-rams--2','liu-brooklyn-blackbirds','manhattan-jaspers', 'new-york-giants','new-york-islanders'," +
+        "'new-york-jets','new-york-knicks','new-york-mets','new-york-liberty',  'new-york-rangers', 'new-york-red-bulls', 'new-york-yankees', 'st-francis-terriers', 'wagner-seahawks')";
+
+    var TheTeamOfSeattle="(  'seattle-mariners', 'seattle-seahawks', 'seattle-sounders-fc', 'seattle-supersonics', 'seattle-redhawks', 'seattle-storm', 'washington-huskies', 'washington-huskies--2'," +
+        " 'washington-state-cougars', 'washington-state-cougars--2', 'eastern-washington-eagles', 'eastern-washington-eagles--2','gonzaga-bulldogs')";
+    var TheTeamOfNBA="('atlanta-hawks', 'boston-celtics', 'brooklyn-nets', 'charlotte-bobcats','chicago-bulls', 'cleveland-cavaliers','dallas-mavericks',  'denver-nuggets', 'detroit-pistons'," +
+        " 'golden-state-warriors', 'houston-rockets', 'indiana-pacers',  'los-angeles-clippers', 'los-angeles-lakers', 'memphis-grizzlies', 'miami-heat','milwaukee-bucks', 'minnesota-timberwolves'," +
+        " 'new-orleans-hornets',  'new-york-knicks', 'oklahoma-city-thunder','orlando-magic', 'philadelphia-76ers', 'phoenix-suns', 'portland-trail-blazers', 'sacramento-kings', 'san-antonio-spurs'," +
+        " 'seattle-supersonics' ,'toronto-raptors', 'utah-jazz', 'washington-wizards')";
+
+    var TheTeamOfEPL="( 'arsenal', 'aston-villa', 'bolton-wanderers', 'chelsea', 'everton', 'fulham','liverpool', 'manchester-city', 'manchester-united', 'newcastle-united', 'norwich-city'," +
+        "'queens-park-rangers', 'reading', 'southampton', 'stoke-city', 'sunderland', 'swansea-city','tottenham-hotspur', 'west-bromwich-albion','west-ham-united',  'wigan-athletic', 'wolverhampton-wanderers')" ;
+
+    var TheTeamOfChicago="('chicago-bears','chicago-blackhawks', 'chicago-bulls', 'chicago-cubs', 'chicago-fire', 'chicago-sky', 'chicago-white-sox',  'chicago-state-cougars', 'illinois-chicago-flames'," +
+        " 'loyola-il-ramblers', 'notre-dame-fighting-irish','notre-dame-fighting-irish--2', 'illinois-fighting-illini', 'illinois-fighting-illini--2',  'northwestern-wildcats', 'northwestern-wildcats--2'," +
+        " 'bradley-braves', 'depaul-blue-demons', 'eastern-illinois-panthers', 'eastern-illinois-panthers--2', 'illinois-state-redbirds', 'illinois-state-redbirds--2','northern-illinois-huskies', 'northern-illinois-huskies--2'," +
+        " 'southern-illinois-salukis','southern-illinois-salukis--2', 'western-illinois-leathernecks', 'western-illinois-leathernecks--2')" ;
+
+    switch (TheTeam) {
+
+        case "MarchMadness":
+            var teams=TheTeamOfMarchMadness;
+            break;
+        case "LA":
+            var teams=TheTeamOfLA;
+            break;
+        case "Boston":
+            var teams=TheTeamOfBoston;
+            break;
+        case "BayArea":
+            var teams=TheTeamOfBayArea;
+            break;
+        case "NewYork":
+            var teams=TheTeamOfNewYork;
+            break;
+        case "Seattle":
+            var teams=TheTeamOfSeattle;
+            break;
+        case "NBA":
+            var teams=TheTeamOfNBA;
+            break;
+        case "EPL":
+            var teams=TheTeamOfEPL;
+            break;
+        case "Chicago":
+            var teams=TheTeamOfChicago;
+            break;
     }
+
+
 
 
 
@@ -50,18 +109,18 @@ exports.test = function (req,res){
 
 
 
-    pool.on('error', function(err){
-        console.error(err.name, err.message);
-
-        res.write(err.name+err.message);
-    });
+//    pool.on('error', function(err){
+//        console.error(err.name, err.message);
+//
+//        res.write(err.name+err.message);
+//    });
 
     pool.connect(function(err){
 
         if(err){
             throw(err);
 
-            return;
+
         }
 
 
@@ -220,7 +279,7 @@ exports.test = function (req,res){
 
 
             }
-            //if no tweets at j hour
+            //if no tweets at the minutes range
             else
             {
                 JSONobj.score=0;
@@ -231,7 +290,7 @@ exports.test = function (req,res){
                 JSONobj.endmin=theEndMin;
                 JSONarray.push(JSON.stringify(JSONobj));
 
-                console.log("nothing at hour"+theHourIndex);
+                console.log("nothing at hour"+theHourIndex+" between "+theStartMin+" and "+theEndMin);
 
 
             }

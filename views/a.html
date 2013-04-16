@@ -154,7 +154,7 @@
                             },error: function(){
                                 alert("an error happened");
                                 EnableButton();
-                                $( "#progress" ).progressbar( "option","disabled",true );
+                                destroyProgressBar();
 
 
                             },
@@ -163,6 +163,8 @@
                                   destroyProgressBar();
                                   var TheData=JSON.parse(data);
                                   ShowInHtml(TheData);
+
+
                                   alert("complete") ;
                                   EnableButton();
 
@@ -171,44 +173,7 @@
 
                       }
 
-                        EmptyContent();
-                         //get the value of the input
-                        var TeamSelected=document.getElementById("selectTeam");
-                        var TeamSelectedValue=TeamSelected.options[TeamSelected.selectedIndex].value;
-                        var DateSelectedValue=  $( "#datepicker" ).val() ;
 
-                        if (DateSelectedValue==""){
-                            alert("select the date before processing your request!")
-                        }
-                        //run only after select a date
-                        else {
-                        DisableButton();
-                        loadProgressBar();
-                        $.ajax({
-                            url: "/MyUrl",
-                            data: {
-
-                                team: TeamSelectedValue,
-                                date: DateSelectedValue
-                            },error: function(){
-                                alert("an error happened");
-                                EnableButton();
-                                $( "#progress" ).progressbar( "option","disabled",true );
-
-
-                            },
-                            success: function( data ) {
-
-                                  destroyProgressBar();
-                                  var TheData=JSON.parse(data);
-                                  ShowInHtml(TheData);
-                                  alert("complete") ;
-                                  EnableButton();
-
-                            }
-                        });
-
-                      }
 
                 }
 
@@ -238,7 +203,8 @@
                            },error: function(){
                                 alert("an error happened");
                                 EnableButton();
-                                $( "#progress" ).progressbar( "option","disabled",true );
+
+                               destroyProgressBar();
 
                            },
                          success: function( data ) {
@@ -302,6 +268,14 @@
       <label>Channel:</label>
       <select id="selectChannel">
           <option value="MarchMadness">March-Madness</option>
+          <option value="LA">LA</option>
+          <option value="Boston">Boston</option>
+          <option value="BayArea">BayArea</option>
+          <option value="NewYork">NewYork</option>
+          <option value="Seattle">Seattle</option>
+          <option value="NBA">NBA</option>
+          <option value="EPL">EPL</option>
+          <option value="Chicago">Chicago</option>
       </select>
           <br>
 

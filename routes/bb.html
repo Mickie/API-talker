@@ -7,39 +7,6 @@
 <p>test</p>
 
 
-    <ul>
-        <label>hour1
-            <label>minute1
-            <li>blah</li>
-            <li>blah</li>
-            <li>blah</li>
-            </label>
-
-            <label>minute2
-                <li>blah</li>
-                <li>blah</li>
-                <li>blah</li>
-            </label>
-
-            <label>minute3
-                <li>blah</li>
-                <li>blah</li>
-                <li>blah</li>
-            </label>
-        </label>
-    </ul>
-
-
-
-<ul>
-    <label>hour1
-        <label>minute1
-            <li>blah</li>
-            <li>blah</li>
-            <li>blah</li>
-        </label>
-    </label>
-</ul>
 
 <button onclick="doit()">click</button>
 <button onclick="it()">clickme</button>
@@ -111,12 +78,18 @@
     }
 
     function it(){
-           for(i=0;i<=59;i=i+5){
+        var a=[1,2,3,4,5];
+        var m=0;
+           for(i=0;i< a.length;i++){
+                 m=m+1;
+                 if(a[i]==2){
+                     break;
+               }
 
-               alert(i);
-               alert(i+4);
+
            }
 
+         alert(m);
 
     }
 
