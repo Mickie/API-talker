@@ -78,20 +78,29 @@
     }
 
     function it(){
-        var a=[1,2,3,4,5];
-        var m=0;
-           for(i=0;i< a.length;i++){
-                 m=m+1;
-                 if(a[i]==2){
-                     break;
-               }
+        var Anarray=[];
+        a();
+        b();
+        c();
+        alert(Anarray);
 
 
-           }
+        function a(){
+            a=[1,2,3];
+            Anarray=Anarray.concat(a);
+        }
 
-         alert(m);
+        function b(){
+            b=[4,5,6];
+            Anarray=Anarray.concat(b);
+        }
+        function c(){
+            c=[7,8,9];
+            Anarray=Anarray.concat(c);
+        }
 
     }
+
 
 </script>
 

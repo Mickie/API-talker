@@ -8,7 +8,8 @@ var express = require('express')
 
   , http = require('http')
   , thereporter = require('./routes/getpostswithhighestscore')
-    ,AnReporter = require('./routes/getchanneltweets')
+  ,AnReporter = require('./routes/getchanneltweets')
+  ,MoreReport=require('./routes/showmorecontent')
   , path = require('path');
 
 var app = express();
@@ -33,8 +34,7 @@ app.configure('development', function(){
 app.get('/', routes.index);
 app.get("/MyUrl",thereporter.fetchResults)
 app.get("/MyUrl1",AnReporter.test)
-
-
+app.get("/MyUrl2",MoreReport.morereports)
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log("Express server listening on port " + app.get('port'));

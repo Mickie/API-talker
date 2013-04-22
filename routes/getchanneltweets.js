@@ -86,7 +86,7 @@ exports.test = function (req,res){
 
 
 
-    //create date objects
+    //get the date string and convert to date object
     function DateFormat(aDateString){
         var Year=aDateString.substring(0,4) ;
         var Month=aDateString.substring(5,7);
@@ -97,29 +97,19 @@ exports.test = function (req,res){
     }
 
 
-
+    // get the time of the selected date as a begindate and one day after as a enddate
     var begindate=DateFormat(TheDate).getTime() ;
     console.log(begindate);
-
     var enddate=new Date( begindate + 24*60*60*1000).getTime();
     console.log(enddate) ;
 
     var theTweetsToReturn = [];
     var theSortTweetsByMins=[];
 
-
-
-//    pool.on('error', function(err){
-//        console.error(err.name, err.message);
-//
-//        res.write(err.name+err.message);
-//    });
-
     pool.connect(function(err){
 
         if(err){
             throw(err);
-
 
         }
 
@@ -132,7 +122,6 @@ exports.test = function (req,res){
                 {
                     console.log("ERROR FOUND!");
                     console.log(err);
-
                     return;
                 }
 
@@ -140,9 +129,6 @@ exports.test = function (req,res){
                 {
                     return aTweet == "[object Object]";
                 }
-
-
-
 
 
                 anArrayOfRows.forEach(function (aRow)
@@ -159,8 +145,12 @@ exports.test = function (req,res){
                     theTweetAndScore.dateandtime= aRow.get("tweet_time").value;
                     theTweetAndScore.score= aRow.get("score").value;
 
-                    if(theTweetAndScore.tweet!==null){theDataIwant.tweetText =  theTweetAndScore.tweet.text;}
-                    else{theDataIwant.tweetText="no text of null content";}
+                    if(theTweetAndScore.tweet!==null){
+                        theDataIwant.tweetText =  theTweetAndScore.tweet.text;
+                    }
+                    else{
+                        theDataIwant.tweetText="no text of null content";
+                    }
 
                     theDataIwant.score =  theTweetAndScore.score;
                     theDataIwant.dateandtime=theTweetAndScore.dateandtime;
@@ -192,11 +182,10 @@ exports.test = function (req,res){
     {
 
         var theTweetByMins=[];
-
         var JSONobj={};
         var JSONarray=[];
 
-        //each hour should have 12 arrays based on mins
+        //each hour should have 12 arrays, each array represents 5 minutes, total day should have 24*12 arrays
         for(j=0;j<24*12;j++) {
 
 
@@ -207,93 +196,87 @@ exports.test = function (req,res){
             var theEndMin=(j*5+4)%60;
 
 
-            for(i=0;i<theTweetsToReturn.length;i++){
-                var theTweet={};
-                var theMin=theTweetsToReturn[i].hour*60+theTweetsToReturn[i].minute;
+                for(i=0;i<theTweetsToReturn.length;i++){
+                    var theTweet={};
+                    var theMin=theTweetsToReturn[i].hour*60+theTweetsToReturn[i].minute;
 
-
-                if(theMin/5<j+1 && theMin/5>=j)
-                {
-
-
-                    theTweet.score=theTweetsToReturn[i].score;
-                    theTweet.tweet=theTweetsToReturn[i].tweetText;
-                    theTweet.dateandtime=theTweetsToReturn[i].dateandtime;
-                    theTweet.hour=theTweetsToReturn[i].hour;
-                    theTweet.startmin=theStartMin;
-                    theTweet.endmin=theEndMin;
-                    theTweetAtMin.push(theTweet);
-                    theCount=theCount+1;
-
-
-                }
-
-            }
-            //if find the tweets of it's minutes range
-            if(theCount>0){
-                theTweetByMins[j]=theTweetAtMin;
-
-                console.log("the length of the list of hour "+theHourIndex+" between startMin "+theStartMin+" and EndMin "+theEndMin+" is " +theTweetByMins[j].length) ;
-
-                theSortTweetsByMins[j]=theTweetByMins[j].sort(compare) ;
-                console.log("the length of the sort list of hour "+theHourIndex+" between startMin "+theStartMin+" and EndMin "+theEndMin+" is " +theSortTweetsByMins[j].length) ;
-
-
-
-                //get the first 10 tweets if more than 10 tweets
-                if (theSortTweetsByMins[j].length>10)
-                {
-                    for(m=0;m<10;m++)
-                    {
-                        JSONobj.score = theSortTweetsByMins[j][m].score;
-                        JSONobj.tweet = theSortTweetsByMins[j][m].tweet;
-                        JSONobj.dateandtime = theSortTweetsByMins[j][m].dateandtime;
-                        JSONobj.hour=theSortTweetsByMins[j][m].hour;
-                        JSONobj.startmin=theSortTweetsByMins[j][m].startmin;
-                        JSONobj.endmin=theSortTweetsByMins[j][m].endmin;
-                        JSONarray.push(JSON.stringify(JSONobj));
-
-                        console.log("the sort list of Hour at "+theHourIndex+" "+theSortTweetsByMins[j][m].score+" "+theSortTweetsByMins[j][m].tweet+" "+theSortTweetsByMins[j][m].dateandtime) ;
-
-                    }
-                }
-                //if less than 10 tweets, get the tweets in its self length
-                else {
-
-                    for(m=0;m<theSortTweetsByMins[j].length;m++)
+                    //get arrays based on its minutes range, the first array should get all tweets start from minute 0 to 4 , 4 is included.
+                    if(theMin/5<j+1 && theMin/5>=j)
                     {
 
-                        JSONobj.score = theSortTweetsByMins[j][m].score;
-                        JSONobj.tweet = theSortTweetsByMins[j][m].tweet;
-                        JSONobj.dateandtime = theSortTweetsByMins[j][m].dateandtime;
-                        JSONobj.hour=theSortTweetsByMins[j][m].hour;
-                        JSONobj.startmin=theSortTweetsByMins[j][m].startmin;
-                        JSONobj.endmin=theSortTweetsByMins[j][m].endmin;
-                        JSONarray.push(JSON.stringify(JSONobj));
 
-                        console.log("the sort list of Hour at "+theHourIndex+" "+theSortTweetsByMins[j][m].score+" "+theSortTweetsByMins[j][m].tweet+" "+theSortTweetsByMins[j][m].dateandtime) ;
+                        theTweet.score=theTweetsToReturn[i].score;
+                        theTweet.tweet=theTweetsToReturn[i].tweetText;
+                        theTweet.dateandtime=theTweetsToReturn[i].dateandtime;
+                        theTweet.hour=theTweetsToReturn[i].hour;
+                        theTweet.startmin=theStartMin;
+                        theTweet.endmin=theEndMin;
+                        theTweetAtMin.push(theTweet);
+                        theCount=theCount+1;
+
 
                     }
+
                 }
+                //if find the tweets of it's minutes range
+                if(theCount>0){
+                    theTweetByMins[j]=theTweetAtMin;
+                    console.log("the length of the list of hour "+theHourIndex+" between startMin "+theStartMin+" and EndMin "+theEndMin+" is " +theTweetByMins[j].length) ;
+                    //sort the array based on its scores
+                    theSortTweetsByMins[j]=theTweetByMins[j].sort(compare) ;
+                    console.log("the length of the sort list of hour "+theHourIndex+" between startMin "+theStartMin+" and EndMin "+theEndMin+" is " +theSortTweetsByMins[j].length) ;
 
 
 
-            }
-            //if no tweets at the minutes range
-            else
-            {
-                JSONobj.score=0;
-                JSONobj.tweet="No tweets";
-                JSONobj.dateandtime = "";
-                JSONobj.hour=theHourIndex;
-                JSONobj.startmin=theStartMin;
-                JSONobj.endmin=theEndMin;
-                JSONarray.push(JSON.stringify(JSONobj));
+                        //get the first 10 tweets if more than 10 tweets
+                        if (theSortTweetsByMins[j].length>10)
+                        {
+                            for(m=0;m<10;m++)
+                            {
+                                JSONobj.score = theSortTweetsByMins[j][m].score;
+                                JSONobj.tweet = theSortTweetsByMins[j][m].tweet;
+                                JSONobj.dateandtime = theSortTweetsByMins[j][m].dateandtime;
+                                JSONobj.hour=theSortTweetsByMins[j][m].hour;
+                                JSONobj.startmin=theSortTweetsByMins[j][m].startmin;
+                                JSONobj.endmin=theSortTweetsByMins[j][m].endmin;
+                                JSONarray.push(JSON.stringify(JSONobj));
+                                console.log("the sort list of Hour at "+theHourIndex+" "+theSortTweetsByMins[j][m].score+" "+theSortTweetsByMins[j][m].tweet+" "+theSortTweetsByMins[j][m].dateandtime) ;
 
-                console.log("nothing at hour"+theHourIndex+" between "+theStartMin+" and "+theEndMin);
+                            }
+                        }
+                        //if less than 10 tweets, get the tweets in its self length
+                        else {
+
+                            for(m=0;m<theSortTweetsByMins[j].length;m++)
+                            {
+
+                                JSONobj.score = theSortTweetsByMins[j][m].score;
+                                JSONobj.tweet = theSortTweetsByMins[j][m].tweet;
+                                JSONobj.dateandtime = theSortTweetsByMins[j][m].dateandtime;
+                                JSONobj.hour=theSortTweetsByMins[j][m].hour;
+                                JSONobj.startmin=theSortTweetsByMins[j][m].startmin;
+                                JSONobj.endmin=theSortTweetsByMins[j][m].endmin;
+                                JSONarray.push(JSON.stringify(JSONobj));
+                                console.log("the sort list of Hour at "+theHourIndex+" "+theSortTweetsByMins[j][m].score+" "+theSortTweetsByMins[j][m].tweet+" "+theSortTweetsByMins[j][m].dateandtime) ;
+
+                            }
+                        }
+
+                 }
+                //if no tweets at the minutes range
+                else
+                {
+                    JSONobj.score=0;
+                    JSONobj.tweet="No tweets";
+                    JSONobj.dateandtime = "";
+                    JSONobj.hour=theHourIndex;
+                    JSONobj.startmin=theStartMin;
+                    JSONobj.endmin=theEndMin;
+                    JSONarray.push(JSON.stringify(JSONobj));
+                    console.log("nothing at hour"+theHourIndex+" between "+theStartMin+" and "+theEndMin);
 
 
-            }
+                }
 
 
 

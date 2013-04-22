@@ -13,9 +13,7 @@ var pool = new helenus.ConnectionPool({
  exports.fetchResults = function (req,res){
      var TheTeam=req.query.team;
      var TheDate=req.query.date;
-     var TheTeamOfMarchMadness = "('louisville-cardinals--2', 'oregon-ducks--2','michigan-state-spartans--2', 'duke-blue-devils--2', 'wichita-state-shockers'," +
-         "'la-salle-explorers','arizona-wildcats--2','ohio-state-buckeyes--2','kansas-jayhawks--2', 'michigan-wolverines--2', 'florida-gators--2'," +
-         " 'florida-gulf-coast-eagles','indiana-hoosiers--2','syracuse-orange--2','marquette-golden-eagles', 'miami-hurricanes--2','fanzo-founders')" ;
+
      // example: Mon Mar 25 2013 10:55:51 GMT-0700 (PDT)
 
      //create date objects

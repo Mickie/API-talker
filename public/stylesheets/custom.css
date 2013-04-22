@@ -1,9 +1,11 @@
 #content{
 
-    margin-top:30px;
+    margin-top:0px;
     border-top:1px solid #dcdcdc;
     overflow-y: scroll;
     height:600px;
+    width:1156px;
+    clear:both;
 }
 #content ul{
 
@@ -31,11 +33,16 @@
     margin-right:20px;
 }
 #progress{
-    margin-top:10px;
+    margin-top:150px;
     height:10px;
+    width:1156px;
 
 }
-#selectChannel{
+fieldset{
+    width:350px;
+    float:left;
+    height:120px;
+    margin-right:12px;
 
 }
 
