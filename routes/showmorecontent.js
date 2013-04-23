@@ -30,9 +30,12 @@ exports.morereports = function (req,res){
 
 
         // get the time of the selected date as a begindate and one day after as a enddate
-        var begindate=DateFormat(TheDate).getTime() ;
+        //format in UTC time, should select date of 7 hours ago from local time
+        //e.x.to get a result for date May 21,local time should select from May 20 17:00(begindate) to May 21 17:00(enddate)
+        var inputDate=DateFormat(TheDate).getTime();
+        var begindate=new Date(inputDate-7*60*60*1000).getTime();
         console.log(begindate);
-        var enddate=new Date( begindate + 24*60*60*1000).getTime();
+        var enddate=new Date( inputDate + 17*60*60*1000).getTime();
         console.log(enddate) ;
 
 
@@ -145,7 +148,8 @@ exports.morereports = function (req,res){
 
             theDataIwant.score =  theContentAndScore.score;
             theDataIwant.dateandtime=theContentAndScore.dateandtime;
-            theDataIwant.hour=theContentAndScore.dateandtime.getHours();
+            //output should in UTC time(7 hours later)
+            theDataIwant.hour=theContentAndScore.dateandtime.getUTCHours();
             theDataIwant.minute=theContentAndScore.dateandtime.getMinutes();
             theDataIwant.contentText=theContentAndScore.content;
 
