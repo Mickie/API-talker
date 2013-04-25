@@ -222,10 +222,10 @@ exports.morereports = function (req,res){
 
 
 
-                //get the first 10 tweets if more than 10 tweets
-                if (theSortTweetsByMins[j].length>10)
+                //get the first 25 tweets if more than 10 tweets
+                if (theSortTweetsByMins[j].length>25)
                 {
-                    for(m=0;m<10;m++)
+                    for(m=0;m<25;m++)
                     {
                         JSONobj.score = theSortTweetsByMins[j][m].score;
                         JSONobj.tweet = theSortTweetsByMins[j][m].content;
@@ -238,7 +238,7 @@ exports.morereports = function (req,res){
 
                     }
                 }
-                //if less than 10 tweets, get the tweets in its self length
+                //if less than 25 tweets, get the tweets in its self length
                 else {
 
                     for(m=0;m<theSortTweetsByMins[j].length;m++)

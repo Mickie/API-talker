@@ -4,7 +4,6 @@
     <list default="true" id="c18df188-72c4-4ad8-b8a1-545a141c47ba" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/showmorecontent.js" afterPath="$PROJECT_DIR$/routes/showmorecontent.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/a.html" afterPath="$PROJECT_DIR$/views/a.html" />
     </list>
     <ignored path="reporter.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -44,7 +43,7 @@
       <file leaf-file-name="showmorecontent.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/routes/showmorecontent.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="151" column="82" selection-start="4875" selection-end="4875" vertical-scroll-proportion="0.78253704">
+            <state line="237" column="79" selection-start="8168" selection-end="8168" vertical-scroll-proportion="0.46952224">
               <folding>
                 <element signature="e#8306#9150#0" expanded="false" />
                 <element signature="e#9243#9670#0" expanded="false" />
@@ -56,7 +55,7 @@
       <file leaf-file-name="a.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/a.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="456" column="131" selection-start="22990" selection-end="22990" vertical-scroll-proportion="-8.583333">
+            <state line="456" column="131" selection-start="22990" selection-end="22990" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -89,14 +88,14 @@
         <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/public/stylesheets/custom.css" />
         <option value="$PROJECT_DIR$/routes/bb.html" />
-        <option value="$PROJECT_DIR$/routes/showmorecontent.js" />
         <option value="$PROJECT_DIR$/views/a.html" />
+        <option value="$PROJECT_DIR$/routes/showmorecontent.js" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="77" />
-    <option name="y" value="103" />
+    <option name="x" value="31" />
+    <option name="y" value="139" />
     <option name="width" value="1456" />
     <option name="height" value="744" />
   </component>
@@ -126,6 +125,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -206,7 +206,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -317,14 +316,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="77" y="103" width="1456" height="744" extended-state="1" />
+    <frame x="31" y="139" width="1456" height="744" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2567376" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26028368" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -401,9 +400,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/stylesheets/custom.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="106" selection-start="265" selection-end="265" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="20" column="106" selection-start="265" selection-end="265" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
@@ -458,9 +455,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/stylesheets/custom.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="106" selection-start="265" selection-end="265" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="20" column="106" selection-start="265" selection-end="265" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/getpostswithhighestscore.js">
@@ -491,14 +486,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/a.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="456" column="131" selection-start="22990" selection-end="22990" vertical-scroll-proportion="-8.583333">
+        <state line="456" column="131" selection-start="22990" selection-end="22990" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/showmorecontent.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="151" column="82" selection-start="4875" selection-end="4875" vertical-scroll-proportion="0.78253704">
+        <state line="237" column="79" selection-start="8168" selection-end="8168" vertical-scroll-proportion="0.46952224">
           <folding>
             <element signature="e#8306#9150#0" expanded="false" />
             <element signature="e#9243#9670#0" expanded="false" />
