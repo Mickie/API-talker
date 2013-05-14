@@ -1,0 +1,64 @@
+<html>
+<head>
+    <title>baseball reports</title>
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="http://code.jquery.com/jquery-migrate-1.1.1.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
+    <Script LANGUAGE="JavaScript" SRC="/javascripts/generateHTML.js"> </script>
+    <Script LANGUAGE="JavaScript" SRC="/javascripts/baseball_button_click_event.js"> </script>
+</head>
+<body>
+
+   <fieldset>
+
+         <h3>find the baseball reports</h3>
+           <label>Team:</label>
+               <select id="selectTeam">
+                <option value="seattle-mariners">Seattle-Mariners</option>
+                   <option value="baltimore-orioles">baltimore-orioles</option>
+                   <option value="arizona-diamondbacks">arizona-diamondbacks</option>
+                   <option value="boston-red-sox">boston-red-sox</option>
+                   <option value="atlanta-braves">atlanta-braves</option>
+                   <option value="chicago-white-sox">chicago-white-sox</option>
+                   <option value="chicago-cubs">chicago-cubs</option>
+                   <option value="cleveland-indians">cleveland-indians</option>
+                   <option value="cincinnati-reds">cincinnati-reds</option>
+                   <option value="detroit-tigers">detroit-tigers</option>
+                   <option value="colorado-rockies">colorado-rockies</option>
+                   <option value="houston-astros">houston-astros</option>
+                   <option value="los-angeles-dodgers">los-angeles-dodgers</option>
+                   <option value="milwaukee-brewers">milwaukee-brewers</option>
+                   <option value="minnesota-twins">minnesota-twins</option>
+                   <option value="new-york-mets">new-york-mets</option>
+                   <option value="new-york-yankees">new-york-yankees</option>
+                   <option value="philadelphia-phillies">philadelphia-phillies</option>
+                   <option value="seattle-mariners">seattle-mariners</option>
+                   <option value="san-diego-padres">san-diego-padres</option>
+                   <option value="tampa-bay-rays">tampa-bay-rays</option>
+                   <option value="san-francisco-giants">san-francisco-giants</option>
+                   <option value="texas-rangers">texas-rangers</option>
+                   <option value="st-louis-cardinals">st-louis-cardinals</option>
+                   <option value="toronto-blue-jays">toronto-blue-jays</option>
+                   <option value="washington-nationals">washington-nationals</option>
+
+                </select>
+           <br>
+           <label>Days back:</label>
+                   <select id="selectDay">
+                       <option value="0">Today</option>
+                       <option value="1">1 day back</option>
+                       <option value="2">2 days back</option>
+                       <option value="3">3 days back</option>
+                       <option value="4">4 days back</option>
+                       <option value="5">5 days back</option>
+                       <option value="6">6 days back</option>
+
+                   </select>
+               <button id="button1" onclick="update()" >update</button>
+   </fieldset>
+
+   <div id="progress1"></div>
+   <div id="content1"></div>
+
+</body>
+</html>

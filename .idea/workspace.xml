@@ -3,7 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="c18df188-72c4-4ad8-b8a1-545a141c47ba" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/custom.css" afterPath="$PROJECT_DIR$/public/stylesheets/custom.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/bb.html" afterPath="$PROJECT_DIR$/routes/bb.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/showmorecontent.js" afterPath="$PROJECT_DIR$/routes/showmorecontent.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/layout.jade" afterPath="$PROJECT_DIR$/views/layout.jade" />
     </list>
     <ignored path="reporter.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -22,10 +26,46 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="bb.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/routes/bb.html">
+      <file leaf-file-name="baseball.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/views/baseball.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="94" column="63" selection-start="2168" selection-end="2168" vertical-scroll-proportion="0.0">
+            <state line="6" column="104" selection-start="353" selection-end="353" vertical-scroll-proportion="0.1212938">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="layout.jade" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/layout.jade">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="9" selection-start="228" selection-end="228" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="querryJSONapi.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/utils/querryJSONapi.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="71" selection-start="389" selection-end="389" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="getResponse.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/utils/getResponse.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="0" selection-start="438" selection-end="438" vertical-scroll-proportion="-9.230769">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="delegates.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/utils/delegates.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="24" selection-start="97" selection-end="97" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -34,20 +74,17 @@
       <file leaf-file-name="getchanneltweets.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/getchanneltweets.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="146" column="52" selection-start="7326" selection-end="7326" vertical-scroll-proportion="0.0">
+            <state line="15" column="4" selection-start="474" selection-end="501" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="showmorecontent.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="showmorecontent.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/showmorecontent.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="237" column="79" selection-start="8168" selection-end="8168" vertical-scroll-proportion="0.46952224">
-              <folding>
-                <element signature="e#8306#9150#0" expanded="false" />
-                <element signature="e#9243#9670#0" expanded="false" />
-              </folding>
+            <state line="130" column="44" selection-start="4004" selection-end="4034" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -55,16 +92,7 @@
       <file leaf-file-name="a.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/a.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="456" column="131" selection-start="22990" selection-end="22990" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="59" selection-start="963" selection-end="963" vertical-scroll-proportion="0.0">
+            <state line="24" column="79" selection-start="847" selection-end="847" vertical-scroll-proportion="47.5">
               <folding />
             </state>
           </provider>
@@ -83,21 +111,30 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/routes/getchanneltweets.js" />
-        <option value="$PROJECT_DIR$/routes/getpostswithhighestscore.js" />
-        <option value="$PROJECT_DIR$/app.js" />
-        <option value="$PROJECT_DIR$/public/stylesheets/custom.css" />
-        <option value="$PROJECT_DIR$/routes/bb.html" />
-        <option value="$PROJECT_DIR$/views/a.html" />
         <option value="$PROJECT_DIR$/routes/showmorecontent.js" />
+        <option value="$PROJECT_DIR$/routes/test2.js" />
+        <option value="$PROJECT_DIR$/routes/test.js" />
+        <option value="$PROJECT_DIR$/views/layout.jade" />
+        <option value="$PROJECT_DIR$/classes/querryJSONapi.js" />
+        <option value="$PROJECT_DIR$/utils/delegates.js" />
+        <option value="$PROJECT_DIR$/app.js" />
+        <option value="$PROJECT_DIR$/routes/bb.html" />
+        <option value="$PROJECT_DIR$/public/stylesheets/custom.css" />
+        <option value="$PROJECT_DIR$/utils/querryJSONapi.js" />
+        <option value="$PROJECT_DIR$/utils/generateHTML.js" />
+        <option value="$PROJECT_DIR$/utils/handleMultipleTypeRes.js" />
+        <option value="$PROJECT_DIR$/views/baseball.html" />
+        <option value="$PROJECT_DIR$/public/javascripts/generateHTML.js" />
+        <option value="$PROJECT_DIR$/public/javascripts/baseball_button_click_event.js" />
+        <option value="$PROJECT_DIR$/utils/getResponse.js" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="31" />
-    <option name="y" value="139" />
-    <option name="width" value="1456" />
-    <option name="height" value="744" />
+    <option name="x" value="219" />
+    <option name="y" value="42" />
+    <option name="width" value="1348" />
+    <option name="height" value="938" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -168,6 +205,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="utils" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="reporter" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="reporter" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="routes" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -185,10 +236,6 @@
               <option name="myItemId" value="public" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stylesheets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -203,6 +250,10 @@
               <option name="myItemId" value="public" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="javascripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
@@ -210,8 +261,12 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
   </component>
   <component name="RunManager">
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node JS" working-dir="$PROJECT_DIR$">
+      <method />
+    </configuration>
     <configuration default="true" type="RSpecRunConfigurationType" factoryName="RSpec">
       <predefined_log_file id="RUBY_RSPEC" enabled="true" />
       <module name="" />
@@ -307,6 +362,24 @@
     <list size="0" />
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false">
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
+    <option name="LAST_MERGED_REVISION" />
+    <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
+    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
+    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
+    <option name="DETECT_NESTED_COPIES" value="true" />
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
+    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
+    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <option name="FORCE_UPDATE" value="false" />
+    <option name="IGNORE_EXTERNALS" value="false" />
+    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="c18df188-72c4-4ad8-b8a1-545a141c47ba" name="Default" comment="" />
@@ -316,14 +389,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="31" y="139" width="1456" height="744" extended-state="1" />
+    <frame x="219" y="42" width="1348" height="938" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32936978" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26028368" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32795697" sideWeight="0.6706302" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -332,7 +406,6 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -391,113 +464,115 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/views/a.html">
+    <entry file="file://$PROJECT_DIR$/routes/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="350" column="77" selection-start="14923" selection-end="14923" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/stylesheets/custom.css">
+    <entry file="file://$PROJECT_DIR$/routes/getpostswithhighestscore.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="106" selection-start="265" selection-end="265" vertical-scroll-proportion="0.0" />
+        <state line="12" column="14" selection-start="361" selection-end="361" vertical-scroll-proportion="0.019255456">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="59" selection-start="963" selection-end="963" vertical-scroll-proportion="0.0">
+        <state line="27" column="30" selection-start="839" selection-end="839" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/bb.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="80" column="40" selection-start="1927" selection-end="1927" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/getchanneltweets.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="165" column="13" selection-start="8040" selection-end="8040" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/showmorecontent.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="128" column="8" selection-start="4607" selection-end="4607" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#8306#9150#0" expanded="false" />
-            <element signature="e#9243#9670#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/getpostswithhighestscore.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="80" column="17" selection-start="2544" selection-end="2545" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/a.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="113" column="77" selection-start="4197" selection-end="4197" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="47" selection-start="926" selection-end="926" vertical-scroll-proportion="0.0">
+        <state line="10" column="82" selection-start="242" selection-end="242" vertical-scroll-proportion="0.1986755">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/stylesheets/custom.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="106" selection-start="265" selection-end="265" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/getpostswithhighestscore.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="61" selection-start="1396" selection-end="1396" vertical-scroll-proportion="0.123558484" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/bb.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="94" column="63" selection-start="2168" selection-end="2168" vertical-scroll-proportion="0.0">
+        <state line="38" column="22" selection-start="590" selection-end="590" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
+    <entry file="file://$PROJECT_DIR$/views/index.jade">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="59" selection-start="963" selection-end="963" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/getchanneltweets.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="146" column="52" selection-start="7326" selection-end="7326" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/a.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="456" column="131" selection-start="22990" selection-end="22990" vertical-scroll-proportion="0.0">
+        <state line="24" column="79" selection-start="847" selection-end="847" vertical-scroll-proportion="47.5">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/showmorecontent.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="237" column="79" selection-start="8168" selection-end="8168" vertical-scroll-proportion="0.46952224">
-          <folding>
-            <element signature="e#8306#9150#0" expanded="false" />
-            <element signature="e#9243#9670#0" expanded="false" />
-          </folding>
+        <state line="130" column="44" selection-start="4004" selection-end="4034" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/generateHTML.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="68" selection-start="311" selection-end="311" vertical-scroll-proportion="0.17045455">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/baseball_button_click_event.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="4" selection-start="23" selection-end="23" vertical-scroll-proportion="0.018939395">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/getchanneltweets.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="4" selection-start="474" selection-end="501" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/delegates.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="24" selection-start="97" selection-end="97" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/getResponse.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="0" selection-start="438" selection-end="438" vertical-scroll-proportion="-9.230769">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/querryJSONapi.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="71" selection-start="389" selection-end="389" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/layout.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="9" selection-start="228" selection-end="228" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/baseball.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="104" selection-start="353" selection-end="353" vertical-scroll-proportion="0.1212938">
+          <folding />
         </state>
       </provider>
     </entry>

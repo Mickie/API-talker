@@ -1,4 +1,4 @@
-#content{
+#content,#content1{
 
     margin-top:0px;
     border-top:1px solid #dcdcdc;
@@ -7,7 +7,7 @@
     width:1156px;
     clear:both;
 }
-#content ul{
+#content ul,#content1 ul{
 
     margin:0;
     padding:8px;
@@ -18,7 +18,7 @@
     top:19px;
 
 }
-#content li {
+#content li ,#content1 li{
     padding:5px;
     list-style: none;
     margin-left:250px;
@@ -28,11 +28,11 @@
 
     margin-top:-20px;
 }
-#content li span{
+#content li span,#content1 li span{
     color:red;
     margin-right:20px;
 }
-#progress{
+#progress,#progress1{
     margin-top:150px;
     height:10px;
     width:1156px;

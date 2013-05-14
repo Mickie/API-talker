@@ -122,7 +122,8 @@ exports.morereports = function (req,res){
 
 
             if(content=="title") {
-                theContentAndScore.content=aRow.get(content).value+" "+aRow.get("url").value;
+               theContentAndScore.content=aRow.get(content).value+" "+aRow.get("url").value+" ---url";
+
             }
 
             if(content=="instagram"){
@@ -138,7 +139,7 @@ exports.morereports = function (req,res){
             }
             if(content=="fb_post"){
                 var theMessage=JSON.parse(aRow.get(content).value);
-                theContentAndScore.content =theMessage.message;
+                theContentAndScore.content =theMessage.message+" ---fb";
             }
 
             theContentAndScore.dateandtime= aRow.get(time).value;

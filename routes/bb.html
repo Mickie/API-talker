@@ -5,7 +5,15 @@
 </head>
 <body>
 <p>test</p>
+<ul>
+   <li><span>score</span>here from the content </li>
+    <li><span>score</span>here from the content </li>
+    <li><span>score</span>here from the content </li>
+    <li><span>score</span>here from the content </li>
+    <li><span>score</span>here from the content </li>
 
+
+</ul>
 
 
 <button onclick="doit()">click</button>
@@ -78,25 +86,51 @@
     }
 
     function it(){
-        var Anarray=[];
-        a();
-        b();
-        c();
-        alert(Anarray);
 
 
-        function a(){
-            a=[1,2,3];
-            Anarray=Anarray.concat(a);
+        function Rabbit(adjective){
+
+                  var blackDragon=new Dragon();
+
+                  this.adjective=adjective ;
+                  this.speak=function(line){
+                      alert("The " + this.adjective+ " rabbit says '"+ line+ "'");
+                  }
+                  this.sing=function(song){
+                      alert("The " + this.adjective+ " rabbit sings '"+ song+ "'");
+                  }
+
+                  this.lastSong=function(){
+                        blackDragon.speak(delegate(this,this.sing,["little Star"]));
+                  }
+
+
         }
 
-        function b(){
-            b=[4,5,6];
-            Anarray=Anarray.concat(b);
+        function Dragon(){
+               this.speak=function(aCallback){
+                   var SingLastSong=aCallback;
+                   alert("The dragon says next song is the last song");
+                   SingLastSong();
+               }
+               this.sing=function(song){
+                   alert("The dragon is signing"+song+"'");
+               }
         }
-        function c(){
-            c=[7,8,9];
-            Anarray=Anarray.concat(c);
+
+        var whiteRabbit=new Rabbit("white");
+        var fatRabbit=new Rabbit("fat");
+
+        whiteRabbit.speak("Oh my ears and whiskers, how late it's getting!")
+        fatRabbit.speak("I could sure use a carrot right now.");
+        fatRabbit.sing("Titanic");
+        whiteRabbit.lastSong();
+
+
+        function delegate(anObject,aMethod,anArray){
+           return function()
+           { aMethod.apply(anObject,anArray)
+           }
         }
 
     }
