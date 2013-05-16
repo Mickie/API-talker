@@ -2,12 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c18df188-72c4-4ad8-b8a1-545a141c47ba" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/utils/APIHandler.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/routes/getchanneltweets.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/routes/getpostswithhighestscore.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/routes/showmorecontent.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/utils/getResponse.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/views/a.html" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/utils/querryJSONapi.js" afterPath="$PROJECT_DIR$/utils/handleJSON.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/custom.css" afterPath="$PROJECT_DIR$/public/stylesheets/custom.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/bb.html" afterPath="$PROJECT_DIR$/routes/bb.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/showmorecontent.js" afterPath="$PROJECT_DIR$/routes/showmorecontent.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/layout.jade" afterPath="$PROJECT_DIR$/views/layout.jade" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/utils/delegates.js" afterPath="$PROJECT_DIR$/utils/delegates.js" />
     </list>
     <ignored path="reporter.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -26,37 +31,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="baseball.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="baseball.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/baseball.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="104" selection-start="353" selection-end="353" vertical-scroll-proportion="0.1212938">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="layout.jade" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/layout.jade">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="9" selection-start="228" selection-end="228" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="querryJSONapi.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/utils/querryJSONapi.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="71" selection-start="389" selection-end="389" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="getResponse.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/utils/getResponse.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="0" selection-start="438" selection-end="438" vertical-scroll-proportion="-9.230769">
+            <state line="21" column="57" selection-start="1038" selection-end="1055" vertical-scroll-proportion="-13.125">
               <folding />
             </state>
           </provider>
@@ -65,34 +43,70 @@
       <file leaf-file-name="delegates.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/utils/delegates.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="24" selection-start="97" selection-end="97" vertical-scroll-proportion="0.0">
+            <state line="14" column="1" selection-start="452" selection-end="452" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="getchanneltweets.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/routes/getchanneltweets.js">
+      <file leaf-file-name="APIHandler.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/utils/APIHandler.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="4" selection-start="474" selection-end="501" vertical-scroll-proportion="0.0">
+            <state line="27" column="58" selection-start="716" selection-end="716" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="showmorecontent.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/routes/showmorecontent.js">
+      <file leaf-file-name="callApiandGetResult.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/utils/callApiandGetResult.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="130" column="44" selection-start="4004" selection-end="4034" vertical-scroll-proportion="0.0">
+            <state line="101" column="86" selection-start="3148" selection-end="3148" vertical-scroll-proportion="0.5179283">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="a.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/a.html">
+      <file leaf-file-name="index.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/routes/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="79" selection-start="847" selection-end="847" vertical-scroll-proportion="47.5">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bb.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/routes/bb.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="112" column="50" selection-start="2945" selection-end="2945" vertical-scroll-proportion="-27.708334">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="26" selection-start="126" selection-end="126" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="user.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/routes/user.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="handleJSON.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/utils/handleJSON.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="1" column="18" selection-start="19" selection-end="19" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -111,28 +125,28 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/routes/showmorecontent.js" />
-        <option value="$PROJECT_DIR$/routes/test2.js" />
-        <option value="$PROJECT_DIR$/routes/test.js" />
         <option value="$PROJECT_DIR$/views/layout.jade" />
         <option value="$PROJECT_DIR$/classes/querryJSONapi.js" />
-        <option value="$PROJECT_DIR$/utils/delegates.js" />
-        <option value="$PROJECT_DIR$/app.js" />
-        <option value="$PROJECT_DIR$/routes/bb.html" />
         <option value="$PROJECT_DIR$/public/stylesheets/custom.css" />
-        <option value="$PROJECT_DIR$/utils/querryJSONapi.js" />
         <option value="$PROJECT_DIR$/utils/generateHTML.js" />
         <option value="$PROJECT_DIR$/utils/handleMultipleTypeRes.js" />
         <option value="$PROJECT_DIR$/views/baseball.html" />
         <option value="$PROJECT_DIR$/public/javascripts/generateHTML.js" />
         <option value="$PROJECT_DIR$/public/javascripts/baseball_button_click_event.js" />
+        <option value="$PROJECT_DIR$/utils/handleMultipleRes.js" />
+        <option value="$PROJECT_DIR$/utils/delegates.js" />
+        <option value="$PROJECT_DIR$/routes/bb.html" />
         <option value="$PROJECT_DIR$/utils/getResponse.js" />
+        <option value="$PROJECT_DIR$/utils/querryJSONapi.js" />
+        <option value="$PROJECT_DIR$/utils/APIHandler.js" />
+        <option value="$PROJECT_DIR$/app.js" />
+        <option value="$PROJECT_DIR$/utils/callApiandGetResult.js" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="219" />
-    <option name="y" value="42" />
+    <option name="x" value="284" />
+    <option name="y" value="116" />
     <option name="width" value="1348" />
     <option name="height" value="938" />
   </component>
@@ -262,9 +276,10 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+    <property name="FullScreen" value="false" />
   </component>
   <component name="RunManager">
-    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node JS" working-dir="$PROJECT_DIR$">
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node JS" working-dir="$PROJECT_DIR$" coffeescript-run="false">
       <method />
     </configuration>
     <configuration default="true" type="RSpecRunConfigurationType" factoryName="RSpec">
@@ -389,15 +404,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="219" y="42" width="1348" height="938" extended-state="1" />
-    <editor active="true" />
+    <frame x="284" y="116" width="1348" height="938" extended-state="1" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32936978" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32795697" sideWeight="0.6706302" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33333334" sideWeight="0.6706302" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -406,6 +420,7 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32936978" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -464,6 +479,70 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/views/index.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/generateHTML.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="68" selection-start="311" selection-end="311" vertical-scroll-proportion="0.17045455" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/baseball_button_click_event.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="4" selection-start="23" selection-end="23" vertical-scroll-proportion="0.018939395" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/baseball.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="57" selection-start="1038" selection-end="1055" vertical-scroll-proportion="-13.125">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/bb.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="112" column="50" selection-start="2945" selection-end="2945" vertical-scroll-proportion="-27.708334">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/layout.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="9" selection-start="228" selection-end="228" vertical-scroll-proportion="0.15151516">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/handleJSON.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="18" selection-start="19" selection-end="19" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/APIHandler.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="58" selection-start="716" selection-end="716" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="26" selection-start="126" selection-end="126" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/user.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/routes/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -471,107 +550,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/getpostswithhighestscore.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="14" selection-start="361" selection-end="361" vertical-scroll-proportion="0.019255456">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="30" selection-start="839" selection-end="839" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/bb.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="82" selection-start="242" selection-end="242" vertical-scroll-proportion="0.1986755">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/stylesheets/custom.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="22" selection-start="590" selection-end="590" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/index.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/a.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="79" selection-start="847" selection-end="847" vertical-scroll-proportion="47.5">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/showmorecontent.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="130" column="44" selection-start="4004" selection-end="4034" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascripts/generateHTML.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="68" selection-start="311" selection-end="311" vertical-scroll-proportion="0.17045455">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascripts/baseball_button_click_event.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="4" selection-start="23" selection-end="23" vertical-scroll-proportion="0.018939395">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/getchanneltweets.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="4" selection-start="474" selection-end="501" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/utils/delegates.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="24" selection-start="97" selection-end="97" vertical-scroll-proportion="0.0">
+        <state line="14" column="1" selection-start="452" selection-end="452" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/utils/getResponse.js">
+    <entry file="file://$PROJECT_DIR$/utils/callApiandGetResult.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="0" selection-start="438" selection-end="438" vertical-scroll-proportion="-9.230769">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utils/querryJSONapi.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="71" selection-start="389" selection-end="389" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/layout.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="9" selection-start="228" selection-end="228" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/baseball.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="104" selection-start="353" selection-end="353" vertical-scroll-proportion="0.1212938">
+        <state line="101" column="86" selection-start="3148" selection-end="3148" vertical-scroll-proportion="0.5179283">
           <folding />
         </state>
       </provider>

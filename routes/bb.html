@@ -135,6 +135,26 @@
 
     }
 
+    exports.getResponse=function(req,res)
+    {
+        this.ResultArray=[];
+        this.ResultObj={};
+        var TheTeam=req.query.team;
+        var TheDay=req.query.day;
+        var url = 'http://data.fanzo.me/top/tweets/'+TheTeam+'/'+TheDay; //  seattle-mariners
+
+        //this.callApi=function(){
+        http.get(url,function(res){
+
+            querryJSONapi.handleJSONapi(res,function(theRes){
+                this.handleMultipleRes(theRes)
+
+            });
+
+        })
+        res.write("hello");
+    }
+
 
 </script>
 

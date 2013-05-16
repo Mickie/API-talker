@@ -1,5 +1,5 @@
 
-exports.handleJSONapi=function(res, aCallback){
+exports.handleJSON=function(res, aCallback){
 
     console.log(aCallback);
     var body = '';
@@ -10,7 +10,7 @@ exports.handleJSONapi=function(res, aCallback){
 
     res.on('end', function() {
        var theResponse = JSON.parse(body)
-       console.log("Got response, length is  "+theResponse.length );
+       console.log("Got response, length is  "+theResponse.length);
        return aCallback(theResponse);
     });
 
