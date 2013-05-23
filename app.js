@@ -6,7 +6,7 @@
 var express = require('express')
   , routes = require('./routes')
   , http = require('http')
-  ,apiHandler=require('./utils/APIHandler')
+  ,apiHandler=require('./public/classes/APIHandler')
   , path = require('path');
 
 var app = express();

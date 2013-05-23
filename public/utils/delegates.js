@@ -1,7 +1,7 @@
 exports.createDelegate=function(anObject,aMethod){
-   return function(){
+    return function(){
         aMethod.apply(anObject,arguments);
-   }
+    }
 
 }
 exports.createExtendedDelegate = function(anObject, aMethod, anArgumentExtensionArray)
